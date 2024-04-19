@@ -275,7 +275,7 @@ With radians AS (SELECT start_name, start_station_id, start_lat/180 * 3.14159265
 					FROM poproutes2
 					)
 
---Manhattan Distance? Actual calculation? WORK IN PROGRESS
+--Manhattan Distance? Actual calculation? WORK IN PROGRESS. OOP. Actually Haversine Distance.
 --acos(sin(start lat)*sin(end lat)+cos(start lat)*cos(end lat)*cos(end long-start long))*3959 (miles) *6371 (km)
 SELECT start_name, start_station_id, end_name, end_station_id, 
 		CASE
